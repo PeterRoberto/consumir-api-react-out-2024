@@ -1,0 +1,29 @@
+.header {
+    background-color: #032541;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-start;
+    padding: 15px 0;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav a {
+    margin: 0 20px 0 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    color: #ccc;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
