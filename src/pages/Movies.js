@@ -3,14 +3,15 @@ import { useState } from "react";
 import { useEffect } from "react";
 
 // CSS
-import "./Filmes.css"
+import "./Movies.css"
+import { Link } from "react-router-dom";
 
 const imageUrl = "https://image.tmdb.org/t/p/w500/";
 
 const urlMovie = "https://api.themoviedb.org/3/movie/";
-const apiKey = "api_key=e100f6ad8b592337561a4a3264cafb07";
+const apiKey = "API_KEY";
 
-const Filmes = () => {
+const Movies = () => {
   const [topMovies, setTopMovies] = useState([]);
 
   // Função para pegar(GET) os filmes, imprimi-los via API.
@@ -35,7 +36,7 @@ const Filmes = () => {
 
           <div className="row">
             {topMovies.map(topMovies => (
-              <div className="col-md-2 all-content-movie">
+              <div key={topMovies.id} className="col-12 col-sm-6 col-md-4 col-lg-4 col-xl-2 all-content-movie">
                 <figure>
                   <img src={`${imageUrl + topMovies.poster_path}`} alt={topMovies.original_title} title={topMovies.original_title} ></img>
                 </figure>
@@ -43,6 +44,7 @@ const Filmes = () => {
                   <h2 className="movie-title mt-2 fw-bold">{topMovies.original_title}</h2>
                   <span className="vote-average">Vote Average: {topMovies.vote_average}</span>
                 </div>
+                <Link to={`/movie-details/${topMovies.id}`}>Details</Link>
               </div>
             ))}
           </div>
@@ -55,4 +57,4 @@ const Filmes = () => {
   )
 }
 
-export default Filmes
+export default Movies

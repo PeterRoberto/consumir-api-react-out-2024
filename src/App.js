@@ -7,7 +7,8 @@ import Navbar from './components/Navbar';
 
 // Pages
 import Home from './pages/Home';
-import Filmes from './pages/Filmes';
+import Movies from './pages/Movies';
+import MoviesDetails from './pages/MoviesDetails';
 
 
 function App() {
@@ -19,7 +20,8 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/filmes" element={<Filmes />} />
+          <Route path="/movies" element={<Movies />} />
+          <Route path="/movie-details/:id" element={<MoviesDetails />} />
         </Routes>
       </BrowserRouter>
       
