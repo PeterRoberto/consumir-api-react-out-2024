@@ -1,0 +1,21 @@
+.single-movies-cast .bg-top-area {
+    background-color: black;
+}
+
+.single-movies-cast .top-area-cast {
+    display: flex;
+    align-items: center;
+}
+
+.single-movies-cast .top-area-cast .img-movie-cast {
+    width: 65px;
+    height: auto;
+    object-fit: cover;
+    margin-right: 20px;
+}
+
+.single-movies-cast .title-movie-cast-page {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+}

@@ -9,7 +9,7 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Movies from './pages/Movies';
 import MoviesDetails from './pages/MoviesDetails';
-
+import MovieCastDetails from './pages/MovieCastDetails';
 
 function App() {
 
@@ -22,6 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/movies" element={<Movies />} />
           <Route path="/movie-details/:id" element={<MoviesDetails />} />
+          <Route path="/movie-details/:id/cast" element={<MovieCastDetails />} />
         </Routes>
       </BrowserRouter>
       

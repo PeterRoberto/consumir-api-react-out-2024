@@ -26,6 +26,11 @@
     color: #fff;
 }
 
+.box-cast-crew .infos-top-cast {
+    display: flex;
+    justify-content: space-between;
+}
+
 .box-cast-crew .title-section {
     text-align: left;
     margin-bottom: 20px;
@@ -33,6 +38,8 @@
 
 .card-box-cast {
     margin-bottom: 40px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
+    border-radius: 8px;
 }
 
 .card-box-cast figure {
@@ -45,15 +52,27 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .box-cast-crew {
     padding: 40px 0;
 }
 
+.box-cast-crew .personal-infos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 20px;
+    min-height: 80px;
+}
+
 .box-cast-crew .title-person {
-    font-size: 18px;
+    font-size: 16px;
     margin: 0;
+    line-height: 18px;
 }
 .box-cast-crew .title-character {
     font-size: 14px;
@@ -62,4 +81,31 @@
     line-height: 17px;
 }
 
+.single-movies .movie-sinopse {
+    text-align: left;
+    display: block;
+    font-weight: bold;
+    font-size: 22px;
+}
 
+
+.single-movies .box-director {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin: 40px 0 0;
+}
+
+.single-movies .box-director .name-director {
+    display: block;
+    font-weight: bold;
+    line-height: 15px;
+    margin-bottom: 5px;
+}
+
+
+.single-movies .box-director .job-director {
+    display: block;
+    line-height: 15px;
+    font-size: 14px;
+}
