@@ -19,11 +19,11 @@ nav a {
     color: white;
 }
 
-nav a:hover {
+nav a:hover:not(.active) {
     color: #ccc;
 }
 
 .active {
-    background-color: black;
-    color: white;
+    color: #f9cc00;
+    font-weight: bold;
 }

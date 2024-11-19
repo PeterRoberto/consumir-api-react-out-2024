@@ -1,7 +1,10 @@
+import MovieDiscover from "../components/MovieDiscover"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <MovieDiscover></MovieDiscover>
+    </div>
   )
 }
 

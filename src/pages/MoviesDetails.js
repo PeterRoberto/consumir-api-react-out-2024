@@ -5,7 +5,7 @@ import noImage from "../assets/img/no-image.jpg";
 
 const imageUrl = "https://image.tmdb.org/t/p/w500";
 const urlMovie = "https://api.themoviedb.org/3/movie/";
-const apiKey = "";
+const apiKey = "api_key=";
 
 
 

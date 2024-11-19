@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const imageUrl = "https://image.tmdb.org/t/p/w500/";
 
 const urlMovie = "https://api.themoviedb.org/3/movie/";
-const apiKey = "";
+const apiKey = "api_key=";
 
 const Movies = () => {
   const [topMovies, setTopMovies] = useState([]);
